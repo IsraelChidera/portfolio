@@ -27,7 +27,7 @@ const contact = () => {
               <p>
                 Would you love to work with me, 
                 or just want to say hi?, please 
-                feel free to reach out to me. I'm 
+                feel free to reach out to me. I am 
                 also currently open to freelance 
                 opportunities.
               </p> 

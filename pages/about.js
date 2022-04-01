@@ -72,7 +72,7 @@ const about = () => {
             designs. I also use adobe illustrator for logo 
             and brand identity designs. Listed below are 
             the tools and technologies that I use and 
-            I'm knowledgeable with.
+            I am knowledgeable with.
           </p>
         </div>
       </div>
