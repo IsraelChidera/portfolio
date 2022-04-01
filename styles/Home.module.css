@@ -1,0 +1,164 @@
+.container {
+  color: #fff;
+  position: relative;
+  height: 100vh;
+  
+}
+
+.title {
+  color: #E16541;
+}
+
+/* Sidebar css styling */
+.main {
+  position: fixed;
+  top: 40%;
+  right: 0rem;
+  z-index: 2;
+}
+
+.main ul {
+  list-style: none;
+}
+
+.main ul li {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  padding-right: 1rem;
+  padding: 10px 1rem 10px 10px;
+}
+
+.main ul li a {
+  display: block;
+  color: #efefef;
+}
+
+
+/* nav styling */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 4.5rem;
+  cursor: pointer;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav ul li a {
+  font-size: 1.2rem;
+  padding-right: 1.8rem;
+  color: #fff;
+  
+}
+
+.nav ul li a:hover {
+  transform: rotate(2turn);
+  opacity: 0.8;
+  transform: matrix(1, 2, 3, 4, 5, 6);
+}
+
+.nav h2 {
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
+/* Hero section */
+.headerContainer {
+  width: 85%;
+  /* max-width: 114rem; */
+  margin: 2rem auto 0 auto;
+}
+
+.headerContent {
+  font-size: 5.6rem;
+    font-weight: 600;
+    letter-spacing: -.04em;
+    line-height: 6rem;
+  background: #E16541;
+  background-color: #E16541;
+  background: conic-gradient(
+    #A7489B 16.666%, 
+    #E16541 16.666%, 
+    #E16541 33.333%, 
+    #F18F43 33.333%, 
+    #F18F43 50%, 
+    #8B9862 50%, 
+    #8B9862 66.666%, 
+    #0139ce 36.666%, 
+    #0139ce 13.333%, 
+    #A7489B 83.333%);
+
+  background-size: 57%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  animation: rainbow-text-animation-rev 0.5s ease forwards;
+  cursor: pointer;
+}
+
+.headerContent:hover {
+  animation: rainbow-text-animation 0.5s ease forwards;
+}
+
+.headerTag {
+  font-size: 4.6rem;
+  font-weight: 200;
+  letter-spacing: -.04em;
+  line-height: 6rem;
+}
+
+.heroSpan {  
+  background-color: #fff;
+   background-image: linear-gradient(
+        45deg,
+        #fff 16.666%, 
+        #E16541 16.666%, 
+        #E16541 33.333%, 
+        #F18F43 33.333%, 
+        #F18F43 50%, 
+        #8B9862 50%, 
+        #8B9862 66.666%, 
+        #476098 66.666%, 
+        #476098 83.333%, 
+        #A7489B 83.333%);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+    animation: rainbow-text-simple-animation-rev 6s ease forwards infinite;
+}
+
+@keyframes rainbow-text-simple-animation-rev {
+  0% {
+      background-size: 650%;
+  }
+  40% {
+      background-size: 650%;
+  }
+  100% {
+      background-size: 100%;
+  }
+}
+
+@keyframes rainbow-text-simple-animation {
+  0% {
+      background-size: 100%;
+  }
+  80% {
+      background-size: 650%;
+  }
+  100% {
+      background-size: 650%;
+  }
+}
+
+.style {
+  color: #0139ce;
+  background: #E16541;
+}
