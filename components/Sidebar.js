@@ -16,43 +16,45 @@ const Sidebar = () => {
   }
     
   return (
-    <main className={styles.main}>
-        <ul>
-   
-          <li onClick={handleClicke}>
-            <Link href="/">
-              <a>
-                < AiFillHome className={styles.icon}/>
-              </a>
-            </Link>
-          </li>
+    <div className={styles.sideBar}>
+        <main className={styles.main}>
+          <ul>
+    
+            <li onClick={handleClicke}>
+              <Link href="/">
+                <a>
+                  < AiFillHome className={styles.icon}/>
+                </a>
+              </Link>
+            </li>
 
-          <li onClick={handleClick}>
-            <Link href="/about">
-              <a>
-                < FaUserAlt className={styles.icon}/>
-              </a>
-            </Link>
-          </li>
+            <li onClick={handleClick}>
+              <Link href="/about">
+                <a>
+                  < FaUserAlt className={styles.icon}/>
+                </a>
+              </Link>
+            </li>
 
-          <li onClick={handleClick}>
-            <Link href="/works">
-              <a>
-                < GiSoapExperiment className={styles.icon} />
-              </a>
-            </Link>
-          </li>            
-        
-          <li onClick={handleClick}>
-            <Link href="/contact">
-              <a>
-                < FaMailBulk className={styles.icon}/>
-              </a>
-            </Link>
-          </li>
-              
-        </ul>
-    </main>
+            <li onClick={handleClick}>
+              <Link href="/works">
+                <a>
+                  < GiSoapExperiment className={styles.icon} />
+                </a>
+              </Link>
+            </li>            
+          
+            <li onClick={handleClick}>
+              <Link href="/contact">
+                <a>
+                  < FaMailBulk className={styles.icon}/>
+                </a>
+              </Link>
+            </li>
+                
+          </ul>
+        </main>
+    </div>
   )
 }
 

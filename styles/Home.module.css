@@ -1,7 +1,7 @@
 .container {
   color: #fff;
   position: relative;
-  height: 100vh;
+  /* height: 100vh; */
   
 }
 
@@ -12,7 +12,7 @@
 /* Sidebar css styling */
 .main {
   position: fixed;
-  top: 40%;
+  top: 30%;
   right: 0rem;
   z-index: 2;
 }
@@ -245,8 +245,10 @@
 
 .para {
   font-weight: 200;
-  line-height: 2rem;
-  padding-bottom: 10px;
+    line-height: 2rem;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    color: #eee;
 }
 
 /* Contact us */
@@ -255,9 +257,9 @@
 } 
 
 .contactHeaderGrid {
-    width: 50%;
-    margin: 12rem auto;
+    width: 50%;    
     padding-bottom: 5rem;
+    margin: 12rem auto 4rem auto;
 }
 
 .contactHeader p {
@@ -370,7 +372,8 @@
 .workProject {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 50%;
+  width: 60%;
+  grid-gap: 2rem;
   margin: 0rem auto 8rem auto;
 }
 
@@ -415,4 +418,106 @@
   justify-content: center;
   height: 100%;
   font-size: 6rem;
+}
+
+.contactDetails{
+  text-align: center;
+}
+
+@media screen and (max-width:968px) {
+  .aboutDetails {
+    display: block;    
+  }
+
+  .aboutHead {    
+    margin: 2rem auto 4rem auto;
+    text-align: center;
+  }
+
+  .aboutFigure p {
+    padding-right: 0rem;
+    display: none;
+  }
+
+  .aboutLine {    
+    margin: 1rem auto;
+    max-width: 371px;
+  }
+
+  .worksHeader {   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .workProject {
+    display: block;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+    margin: 0rem auto 8rem auto;
+    text-align: right;
+  }
+
+  .projectImage {
+    height: 100%;
+    background: #8B9862;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .worksHeaderFigure{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+  }
+
+  .worksHeaderDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    order: 2;
+    margin-top: -3rem;    
+    margin-bottom: 4rem;
+  }
+  
+  .main {
+    position: static;
+    /* top: 30%; */
+    
+  }
+
+  .sidebarMobile {
+    bottom: 0px;
+    left: 0rem;
+    z-index: 2;
+  }
+
+  .main ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10px;
+  }
+
+  .sideBar {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    background: #101010;
+  }
+
+  .nav {    
+    padding: 1.5rem 0.5rem;
+    cursor: pointer;
+}
+}
+
+@media screen and (max-width: 548px){
+  .workProject{
+    width: 70%; 
+  }  
 }

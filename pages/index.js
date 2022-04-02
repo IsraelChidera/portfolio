@@ -342,7 +342,7 @@ export default function Home() {
           </div>      
         </section>
 
-        < Sidebar />
+        < Sidebar className={styles.sidebarMobile}/>
 
 
       </div>
