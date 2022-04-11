@@ -14,3 +14,14 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+
+.preloader {
+  height: 100vh;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; */
+  background-color: #0139ce;
+  text-align: center;
+  color: "white"
+}

@@ -1,19 +1,26 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import { useState, useEffect } from 'react';
 import Image from 'next/image'
 import styles from '../styles/Home.module.css';
 import Navbar from '../components/Navbar';
-import Sidebar from '../components/Sidebar';
 import Link from 'next/link';
 // import "../fonts/axiforma-regular.ttf";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Home() {
   
+
+  useEffect(() => {
+    AOS.init();       
+  }, [])
   
   return (
-    <>
+    <>     
       <div className={styles.container}>
         <Head>
-          <title>Israel Chidera</title>        
+          <title>Israel Chidera</title>     
+          <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />   
         </Head>
 
         <Navbar/>
@@ -34,11 +41,11 @@ export default function Home() {
         <section className={styles.about}>  
           <div className={styles.aboutDetails}>
             <div className={styles.aboutFigure}>
-              <h1 className={styles.aboutFigureHeader}>
+              <h1 data-aos="fade-up" className={styles.aboutFigureHeader}>
                 01
               </h1>
 
-              <p>
+              <p data-aos="fade-up">
                 Coding + Piano + Music
               </p>
             </div>
@@ -57,7 +64,7 @@ export default function Home() {
 
               
 
-              <p className={styles.para}>
+              <p data-aos="fade-up" className={styles.para}>
                 <span className={styles.aboutSpan}> Hi! </span>I am Israel Chidera. I have a strong passion 
                 for elegant designs, creating usable user 
                 interfaces and building with intent. I love 
@@ -67,7 +74,7 @@ export default function Home() {
                 I live in Lagos, Nigeria. 
               </p>
 
-              <p className={styles.para}>
+              <p data-aos="fade-up" className={styles.para}>
                 I am a recent 
                 Microbiology/Biochemistry graduate, from 
                 the University of Nigeria, Nsukka. I was 
@@ -80,7 +87,7 @@ export default function Home() {
                 many tools and languages.
               </p>
 
-              <p className={styles.para}>
+              <p data-aos="fade-up" className={styles.para}>
                 My goal is to become a top notch front end 
                 engineer and a UI/UX designer who is able 
                 to consistently build and design usable user 
@@ -90,7 +97,7 @@ export default function Home() {
                 The goal is to be better than yesterday.
               </p>
 
-              <p className={styles.para}>
+              <p data-aos="fade-up" className={styles.para}>
                 I use a number of tools and technologies 
                 for my designs and development. I mainly use 
                 Figma for prototyping, wireframing and visual 
@@ -106,7 +113,7 @@ export default function Home() {
         <section className={styles.works}> 
           <div>
               <div className={styles.worksHeader}>
-                <div className={styles.worksHeaderDetails}>
+                <div data-aos="fade-up" className={styles.worksHeaderDetails}>
                   <p>
                     Latest Works
                   </p>
@@ -116,7 +123,7 @@ export default function Home() {
                   <h6 className={styles.worksLine}></h6>
                 </div>
 
-                <div className={styles.worksHeaderFigure}>
+                <div data-aos="fade-up" className={styles.worksHeaderFigure}>
                   <h1 className={styles.imageText}>
                     02
                   </h1>
@@ -124,7 +131,7 @@ export default function Home() {
               </div>
 
               <div className={styles.worksShowRoom}>
-                <div className={styles.workProject}>
+                <div data-aos="fade-up" className={styles.workProject}>
                   <div className={styles.projectImage}>
                     <div className={styles.projectImageFlexed}>
                       SB
@@ -155,7 +162,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className={styles.workProject}>
+                <div data-aos="fade-up" className={styles.workProject}>
                   <div className={styles.projectImage}>
                     <div className={styles.projectImageFlexed}>
                       NS
@@ -185,7 +192,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className={styles.workProject}>
+                <div data-aos="fade-up" className={styles.workProject}>
                   <div className={styles.projectImage}>
                     <div className={styles.projectImageFlexed}>
                       RE
@@ -215,7 +222,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className={styles.workProject}>
+                <div data-aos="fade-up" className={styles.workProject}>
                   <div className={styles.projectImage}>
                     <div className={styles.projectImageFlexed}>
                       PIS
@@ -244,7 +251,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className={styles.workProject}>
+                <div data-aos="fade-up" className={styles.workProject}>
                   <div className={styles.projectImage}>
                     <div className={styles.projectImageFlexed}>
                       MT
@@ -273,7 +280,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className={styles.workProject}>
+                <div data-aos="fade-up" className={styles.workProject}>
                   <div className={styles.projectImage}>
                     <div className={styles.projectImageFlexed}>
                       v1
@@ -307,7 +314,7 @@ export default function Home() {
         </section>
 
         <section className={styles.contact}>               
-          <div className={styles.contactHeaderGrid}>
+          <div data-aos="fade-up" className={styles.contactHeaderGrid}>
             <div className={styles.contactHeader}>
               <p>
                 GET IN TOUCH
@@ -340,12 +347,8 @@ export default function Home() {
               
             </div>
           </div>      
-        </section>
-
-        < Sidebar className={styles.sidebarMobile}/>
-
-
-      </div>
+        </section>        
+      </div>      
     </>
     
   )
