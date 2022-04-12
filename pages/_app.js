@@ -1,7 +1,8 @@
 import '../styles/globals.css';
 import { useState, useEffect } from 'react';
 import React from 'react';
-
+import img from '../public/preloader.gif';
+import Image from 'next/image'
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(false);
   useEffect(() => {    
@@ -11,10 +12,14 @@ function MyApp({ Component, pageProps }) {
     }, 4000)
   }, [])
 
+
   return (
     <>
       {
-        loading? (<div className="preloader">Laodinggg</div>):
+        loading? (<div className="preloader">
+          <Image src="/preloader.gif" alt="me" width="90" height="90" />
+          </div>
+        ):
         <React.Fragment>
           <Component {...pageProps} />
         </React.Fragment>

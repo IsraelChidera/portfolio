@@ -17,11 +17,16 @@ body {
 
 .preloader {
   height: 100vh;
-  /* display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center; */
-  background-color: #0139ce;
+  text-align: center;
+  background-color: #000;
   text-align: center;
   color: "white"
 }
+
+/* .preloader img {
+  height: 100px;
+  width: 100px;
+} */
