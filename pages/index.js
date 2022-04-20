@@ -19,7 +19,22 @@ export default function Home() {
     <>     
       <div className={styles.container}>
         <Head>
-          <title>Israel Chidera</title>     
+          <title>Israel Chidera - Front end engineer</title>  
+          <meta name="title" content="Israel Chidera - Frontend engineer"/>
+          <link rel="shortcut icon" href="/static/logos.png" />
+          <meta name="twitter:card" content="summary_large_image"/>
+          <meta name="twitter:site" content="@ChideraEl"/>
+          <meta name="theme-color" content="#000000" />
+          <meta property="og:type" content="website" />
+          <meta name="facebook-domain-verification" content="zyv5h986yalnk6kwigolm35cql4xhf" />
+          <meta name="twitter:title" content="ChideraEl"/>
+          <meta name="twitter:description" content="Portfolio of Israel Chidera - A frontend engineer"/>          
+          <meta property="og:type" content="profile"/>
+          <meta property="og:title" content="IsraelChidera"/>
+          <meta property="og:description" content="Portfolio of Israel Chidera - A frontend engineer"/>
+          <meta property="og:url" content="https://israelchidera.vercel.app"></meta>
+          <meta property="og:image" content="https://media-exp1.licdn.com/dms/image/C4D03AQF9AyJHYa1ngg/profile-displayphoto-shrink_800_800/0/1613994477552?e=1655942400&v=beta&t=a2pUsiZi_X4vV_16KiAQOimEukr0x8VT9dVPIbkfbtc"></meta>
+          <meta name="twitter:image" content="https://twitter.com/ChideraEl/photo"></meta>
           <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />   
         </Head>
 
